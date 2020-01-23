@@ -1,10 +1,10 @@
 * Purpose
 
-If, in Anki 2.0, you valued being able to toggle the mark with =Ctrl+k=, while you were in the "note area" in one of the fields, this add-on for Anki 2.1 might be useful.
+If, in Anki 2.0, you valued being able to toggle the mark with @@html:<kbd>@@Ctrl@@html:</kbd>@@+@@html:<kbd>@@k@@html:</kbd>@@, while you were in the "note area" in one of the fields, this add-on for Anki 2.1 might be useful.
 
 ** Rationale
 
-In Qt5, which is what Anki 2.1 uses, there's [[https://doc.qt.io/qt-5/qtextedit.html#editing-key-bindings][a new text-editing keybinding =Ctrl+k=]], for deleting to the end of the line. Since it's an inbuilt keybinding, it takes precendence over Anki's own =Ctrl+k= keybinding, and hence =Ctrl+k= no longer toggles the mark when you're in a field, but instead deletes the rest of the line...
+In Qt5, which is what Anki 2.1 uses, there's [[https://doc.qt.io/qt-5/qtextedit.html#editing-key-bindings][a new text-editing keybinding @@html:<kbd>@@Ctrl@@html:</kbd>@@+@@html:<kbd>@@k@@html:</kbd>@@]], for deleting to the end of the line. Since it's an inbuilt keybinding, it takes precendence over Anki's own @@html:<kbd>@@Ctrl@@html:</kbd>@@+@@html:<kbd>@@k@@html:</kbd>@@ keybinding, and hence @@html:<kbd>@@Ctrl@@html:</kbd>@@+@@html:<kbd>@@k@@html:</kbd>@@ no longer toggles the mark when you're in a field, but instead deletes the rest of the line...
 
 (Aside: in general, I'm extremely happy when UI toolkits implement Emacs-like keybindings, but =C-k= by itself, isn't particularly helpful, since all the other Emacs keybindings don't work. The same approach used here to override Qt's =C-k=, could however, instead be used to override =C-a=, =C-x= etc. so it seems that proper Emacs keybindings could be implemented!)
 
